@@ -1,7 +1,6 @@
 import {run} from '@cycle/rxjs-run'
 import {Observable as O, of, from, merge, combineLatest, concat, never} from 'rxjs'
-import {map, startWith, delay, tap, debounceTime, take, filter, catchError, switchMap} from 'rxjs/operators'
-import isolate from '@cycle/isolate'
+import {map, startWith} from 'rxjs/operators'
 import {makeDOMDriver, div, ul, li} from '@cycle/dom'
 function Grid(sources) {
   const mouseenter$ = sources.DOM.select('.appResult').events('mouseenter')
@@ -29,7 +28,7 @@ function Grid(sources) {
 
 function main(sources) {
   console.log('hello')
-  const grid = isolate(Grid)(sources)
+  const grid: any = Grid(sources)
 
   return {
     DOM: grid.DOM
