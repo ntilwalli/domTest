@@ -1,0 +1,48 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        //"module": "commonjs",
+        "rootDir": ".",
+        "outDir": "dist",
+        //"sourceRoot": "apps/candle/priv/static/transpiled",
+        "sourceMap": true,
+        "lib": [
+          "dom",
+          "es5",
+          "scripthost",
+          "es2015.collection",
+          "es2015.promise",
+          "es2015.iterable"
+        ]
+        // "baseUrl": ".",
+        // "paths": {
+        //     "@cycle/storage": [
+        //         "customTypings/cycle-storage.d.ts"
+        //     ]
+        // },
+        //     "jsondiffpatch": [
+        //         "typingsLocal/jsondiffpatch.d.ts"
+        //     ]
+        // },
+        // "moduleResolution": "node",
+        //"declaration": true,
+        
+    },
+    "files": [
+        //"customTypings/validator.d.ts",
+        "customTypings/cookie_js.d.ts",
+        "customTypings/parse-address.d.ts",
+        "customTypings/rrule.d.ts",
+        "customTypings/cycle-storage.d.ts",
+        "customTypings/geolib.d.ts",
+        "customTypings/history.d.ts",
+        "customTypings/twitter-validate.d.ts",
+        //"typings/index.d.ts",
+        "web/static/ts/main.ts"
+    ],
+    "exclude": [
+      "node_modules",
+      "lib",
+      "dist"
+    ]
+}
