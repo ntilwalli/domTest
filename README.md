@@ -1,6 +1,6 @@
-# routingWithState
+# domTest
 
-Demonstrates CycleJS routing while sharing state from parent component with children components.  Sharing state during routing can also be done using the browser's history with pushState which is shown [here](https://github.com/ntilwalli/routingWithPushState).
+Demonstrates CycleJS bug in v20 of DOM driver where `mouseenter` event works properly  `master` branch is same as `v22` branch. To toggle to same repo using v22 of drom driver switch to the `v22` branch where the `mouseenter` event is broken.
 
 ### Run locally (assumes Babel 6):
 1. `npm install -g live-server watchify`
